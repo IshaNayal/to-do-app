@@ -1,0 +1,2 @@
+Last applied migration:
+1735742210_add_social_login_support at 2025-07-31T15:53:20.288Z
