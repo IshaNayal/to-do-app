@@ -1,0 +1,96 @@
+/* Pink, Blue, Purple Gradient Theme */
+:root {
+  /* Primary gradient colors */
+  --gradient-start: #ff6b9d; /* Pink */
+  --gradient-middle: #4f46e5; /* Blue */
+  --gradient-end: #9333ea; /* Purple */
+  
+  /* Lighter variants */
+  --pink-light: #fce7f3;
+  --blue-light: #e0e7ff;
+  --purple-light: #f3e8ff;
+  
+  /* Text colors */
+  --text-primary: #000000;
+  --text-secondary: #000000;
+  --text-muted: #000000;
+}
+
+body {
+  background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-middle) 50%, var(--gradient-end) 100%);
+  min-height: 100vh;
+  color: #000000;
+}
+
+* {
+  color: #000000;
+}
+
+/* Placeholder text styling */
+::placeholder {
+  color: #000000 !important;
+  opacity: 0.7;
+}
+
+input::placeholder {
+  color: #000000 !important;
+  opacity: 0.7;
+}
+
+/* Gradient backgrounds */
+.gradient-bg {
+  background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-middle) 50%, var(--gradient-end) 100%);
+}
+
+.gradient-bg-light {
+  background: linear-gradient(135deg, var(--pink-light) 0%, var(--blue-light) 50%, var(--purple-light) 100%);
+}
+
+/* Black text */
+.gradient-text {
+  color: #000000;
+}
+
+/* Glass morphism effect */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Custom card styling */
+.card-gradient {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* Button gradients */
+.btn-gradient {
+  background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-middle) 50%, var(--gradient-end) 100%);
+  border: none;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.btn-gradient:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  color: white;
+}
+
+/* Badge gradients */
+.badge-gradient {
+  background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-middle) 50%, var(--gradient-end) 100%);
+  color: black;
+  border: none;
+}
+
+/* Loading spinner */
+.spinner-gradient {
+  border-color: transparent;
+  border-top-color: var(--gradient-start);
+  border-right-color: var(--gradient-middle);
+  border-bottom-color: var(--gradient-end);
+}
